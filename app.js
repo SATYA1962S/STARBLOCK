@@ -13,7 +13,7 @@
   * Require the Blockchain class. This allow us to have only one instance of the class.
   */
  const BlockChain = require('./src/blockchain.js');
- const BlockchainController =('./src/blockchainController.js');
+ 
  class ApplicationServer {
  
      constructor() {

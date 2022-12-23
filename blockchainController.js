@@ -119,8 +119,8 @@
     }
        
        
-module.exports = (app, blockchainObj) => { return new BlockchainController(app, blockchainObj)};
-       
+  module.exports = (app, blockchainObj) => { return new BlockchainController(app, blockchainObj)};
+      
       
     
  

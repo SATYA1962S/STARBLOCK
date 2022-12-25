@@ -10,7 +10,7 @@
             this.submitStar();
             this.getBlockByHash();
             this.getStarsByOwner();
-            this.validateChain();
+            this.validateChainEP();
            }
            
             validateChainEP(){

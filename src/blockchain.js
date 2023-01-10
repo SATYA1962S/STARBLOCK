@@ -63,14 +63,15 @@
             
          
      }
+     
  
      requestMessageOwnershipVerification(address) {
+        let self = this;
          return new Promise((resolve) => {
-            const OwnershipMessage  = `${address}:new Date().getTime().toString().slice(0,-3)}:starRegistry`;
-                   resolve(OwnershipMessage  );
-
-             
-         });
+            let requestMessage  = address+":"+(new Date().getTime().toString().slice(0,-3))+":starRegistry";
+                 
+            resolve(requestMessage);
+        });
     }
      submitStar(address, message, signature, star) {
          let self = this;
@@ -187,4 +188,5 @@
     }
 }
 
-module.exports.Blockchain = Blockchain;   
+module.exports.Blockchain = Blockchain;  
+ 

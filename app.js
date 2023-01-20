@@ -42,7 +42,7 @@
      }
  
      initControllers() {
-         require("./blockchainController.js")(this.app, this.blockchain);
+         require("./BlockchainController.js")(this.app, this.blockchain);
      }
  
      start() {
